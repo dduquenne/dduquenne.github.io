@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Assistant personnel (prototype)</title>
+<style>body{font-family:system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.5;color:#222;background:#fff}</style>
+</head>
+<body>
+<h1>Politique de confidentialité — Assistant personnel (prototype)</h1>
+<p>Dernière mise à jour : 9 novembre 2026.</p>
+<p>Assistant personnel (prototype) est une application personnelle, exécutée sur l'ordinateur de son propriétaire. Son seul utilisateur est le titulaire du compte Google qu'elle consulte.</p>
+
+<h2>Données Google consultées</h2>
+<p>L'application demande les autorisations suivantes, et aucune autre :</p>
+<ul>
+<li><code>gmail.readonly</code> : lire les messages reçus pour les trier, les résumer et préparer le briefing ;</li>
+<li><code>gmail.compose</code> : enregistrer comme brouillons les réponses validées par le propriétaire. Aucun message n'est envoyé ;</li>
+<li><code>calendar.readonly</code> : lire les rendez-vous pour le briefing et la détection des conflits. Aucun événement n'est créé, modifié ou supprimé.</li>
+</ul>
+
+<h2>Traitement et transferts</h2>
+<p>Les données sont traitées sur l'ordinateur du propriétaire. Pour fournir les fonctions visibles de l'application (briefing, tri, résumés, propositions de réponse), des extraits de messages et de rendez-vous sont transmis à l'API Claude d'Anthropic. Ces messages peuvent contenir des données de leurs expéditeurs. Selon ses conditions commerciales, Anthropic n'utilise pas ces données pour entraîner ses modèles et les conserve au plus 30 jours.</p>
+<p>Quand le propriétaire appuie sur le bouton « parler », sa voix est transmise au service de transcription de Deepgram, par son point d'accès situé dans l'Union européenne, avec refus de participation au programme d'amélioration des modèles. Aucun son n'est capté en dehors de cet appui, et aucun enregistrement audio n'est conservé par l'application.</p>
+<p>Ces transferts n'ont lieu qu'avec le consentement du propriétaire, qui est aussi le développeur de l'application. Les données ne sont ni vendues, ni partagées avec d'autres tiers, ni utilisées pour de la publicité ou pour entraîner des modèles d'intelligence artificielle. Personne d'autre que le propriétaire ne les lit.</p>
+<p>L'utilisation et le transfert à toute autre application des informations reçues des API Google respectent la <a href="https://developers.google.com/terms/api-services-user-data-policy">règle relative aux données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée.</p>
+
+<h2>Stockage et conservation</h2>
+<p>Les jetons d'accès Google et les clés d'API sont rangés dans le trousseau chiffré de macOS. Les résumés, brouillons et transcriptions sont stockés dans une base locale sur l'ordinateur du propriétaire ; les journaux techniques ne contiennent pas le contenu des messages. Toutes ces données sont supprimées à la fin du prototype.</p>
+
+<h2>Révocation et contact</h2>
+<p>L'autorisation peut être retirée à tout moment depuis la page <a href="https://myaccount.google.com/permissions">Applications tierces ayant accès à votre compte</a>. Pour toute question, écrire à l'adresse d'assistance indiquée sur l'écran d'autorisation Google de l'application.</p>
+<p><a href="index.html">Retour à l'accueil</a></p>
+</body>
+</html>
